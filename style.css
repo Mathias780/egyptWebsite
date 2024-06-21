@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    background-color: white;
+    font-family: "Reddit Sans", sans-serif;
+}
+
+/*Header styling*/
+
+header {
+    padding-block: 2.5rem;
+    padding-inline: 5rem;
+}
+
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.ul-header {
+    list-style: none;
+    display: flex;
+
+    
+}
+
+.container-header1 a {
+    font-size: 2rem;
+    color: black;
+}
+
+.ul-header li{
+    margin-right: 1rem;
+    font-size: 1.1rem;
+}
+
+.ul-header a {
+    text-decoration: none;
+    color: gray;
+
+}
+.ul-header a:hover {
+    color: rgb(0, 0, 0);
+    
+}
+
+.hidden {
+    display: none;
+}
+
+.container-headerMobile button {
+    border: none;
+    background-color: none;
+    font-size: 1.5rem;
+    
+}
+.container-headerMobile {
+    display: none;
+}
+
+@media (max-width:850px) {
+    .container-headerMobile {
+        display: flex;
+    }
+}
+
+/*END Header Styling*/
+
+/*New Section*/
+
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-block: 4rem ;
+    padding-inline: 2rem
+}
+
+.title h1 {
+    font-size: 2.5rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.image-grid img {
+    max-width: 100%;
+    min-height: 100%;
+}
+
+@media (max-width:850px) {
+    .image-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .container-header2 {
+        display: none;
+    }
+}
